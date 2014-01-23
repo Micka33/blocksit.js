@@ -5,6 +5,7 @@
 		numOfCol: 5,
 		offsetX: 5,
 		offsetY: 5,
+		adjustWidth: false,
 		blockElement: 'div'
 	};
 	
@@ -141,13 +142,16 @@
 		var pos = getBlockPostion(obj.data('size'));
 		var blockWidth = colwidth * obj.data('size') - (obj.outerWidth() - obj.width());
 
+		//if we can adjust the block widh
+		var css = {
+				'left': pos[0] * colwidth,
+				'top': pos[1],
+				'position': 'absolute'
+			}
+		if (blocksOptions.adjustWidth)
+			css['width'] = blockWidth - blocksOptions.offsetX*2;
 		//update style first before get object height
-		obj.css({
-			'width': blockWidth - blocksOptions.offsetX*2,
-			'left': pos[0] * colwidth,
-			'top': pos[1],
-			'position': 'absolute'
-		});
+		obj.css(css);
 		
 		var blockHeight = obj.outerHeight();
 		
