@@ -49,7 +49,6 @@
 			block.x = x + i;
 			block.size = width;
 			block.endY = y + height + blocksOptions.offsetY*2;
-			
 			blockarr.push(block);
 		}
 	}
@@ -142,12 +141,12 @@
 		var pos = getBlockPostion(obj.data('size'));
 		var blockWidth = colwidth * obj.data('size') - (obj.outerWidth() - obj.width());
 
-		//if we can adjust the block widh
 		var css = {
 				'left': pos[0] * colwidth,
 				'top': pos[1],
 				'position': 'absolute'
 			}
+		//if we can adjust the block widh
 		if (blocksOptions.adjustWidth)
 			css['width'] = blockWidth - blocksOptions.offsetX*2;
 		//update style first before get object height
@@ -171,7 +170,6 @@
 
 		//create empty blockarr
 		createEmptyBlockarr();
-
 		container.children(blocksOptions.blockElement).each(function(e) {
 			setPosition($(this), e);
 		});
