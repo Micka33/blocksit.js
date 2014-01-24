@@ -14,7 +14,7 @@ BlocksIt.js will re-position the selected elements using CSS absolute position p
 
 #How to use
 
-1. First, include `jQuery` and `BlocksIt.js` script files inside <head> tag like usual.
+1. First, include `jQuery` and `BlocksIt.js` script files inside the `<head>` tag like usual.
 
   ```
   <script type="text/javascript" src="jquery.min.js"></script>
@@ -22,7 +22,7 @@ BlocksIt.js will re-position the selected elements using CSS absolute position p
   ```
   It should works well with jQuery 1.7.1 (haven’t tested for lower version).
 
-2. Next, call the `.BlocksIt()` function on jQuery object. It supports for few settings, do refer to Configuration section below for deep details.
+2. Next, call the `.BlocksIt()` function on jQuery object.
 
   ```
   $(document).ready(function() {
