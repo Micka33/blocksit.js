@@ -31,7 +31,7 @@ BlocksIt.js will re-position the selected elements using CSS absolute position p
   ```
 3. Done! =)
 
-*Note: If the blocks contains of <img> element, be sure to specific the images’ height before calling .BlocksIt()function, else you have to make sure the images are loaded.You could use $(window).load() to make sure everything have loaded into DOM, or use some plugin like waitForImages to check the images status.*
+*Note: If the blocks contains of <img> element, be sure to specific the images’ height before calling `.BlocksIt()` function, else you have to make sure the images are loaded.You could use `$(window).load()` to make sure everything have loaded into DOM, or use some plugin like [waitForImages](https://github.com/alexanderdickson/waitForImages) to check the images status.*
 
 #Configuration
 
