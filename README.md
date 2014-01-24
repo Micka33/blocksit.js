@@ -87,9 +87,12 @@ $('.container').BlocksIt({
 
 #FAQ
 
-1. My elements are set outside of my container! Why?
+**1. My elements are set outside of my container! Why?**
+
   I don't know why, but to fix it, make sure your container has the following css property: `position: relative;`
-2. Can I see what it does ?
+
+**2. Can I see what it does ?**
+
   There is actually two example available. [First](http://www.inwebson.com/demo/blocksit-js/demo2/), [Second](http://www.inwebson.com/demo/blocksit-js/demo1/).
 
 #About this git
