@@ -80,7 +80,7 @@ $('.container').BlocksIt({
     <td>blockElement</td>
     <td>String</td>
     <td>"div"</td>
-    <td>Targeted child element, which will converted into blocks.</td>
+    <td>Targeted child elements, which will be converted into blocks.</td>
   </tr>
 </table>
 
